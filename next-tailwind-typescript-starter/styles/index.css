@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins-Bold";
+    font-weight: 400;
+    src: url("../public/fonts/Poppins-SemiBold.ttf")format("truetype");
+  
+    font-weight: 600;
+  
+    font-style: normal;
+  }
+  input{
+    accent-color:#ff4d6e;
+  }
+  @font-face {
+    font-family: "SfproText";
+    src: url("../public/fonts/alfont_com_SFProAR_semibold.ttf")format("truetype");
+    font-weight: 400;
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "elwatanP";
+    font-weight: 200;
+    src: url("../public/fonts/ElwatanP.ttf")format("truetype");
+   font-style: normal;
+  }
+  body{
+    background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+
+  }
+  html,
+body {
+  padding: 0rem;
+  margin: 0;
+
+    background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
