@@ -27,19 +27,25 @@
     src: url("../public/fonts/ElwatanP.ttf")format("truetype");
    font-style: normal;
   }
-  body{
-    background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+  .dark .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
 
-  }
+
   html,
-body {
+body{
   padding: 0rem;
   margin: 0;
 font-family: "Poppins-Bold";
-    background-color: rgb(238 242 255 / var(--tw-bg-opacity));
-    --tw-bg-opacity: 1;
+   
 
 }
+bodybackground{
+   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+}
+
 
 a {
   color: inherit;

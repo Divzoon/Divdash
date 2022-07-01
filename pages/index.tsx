@@ -15,9 +15,9 @@ function index() {
 
       
       
-   <>
+   <div className="bodybackground dark:bg-gray-900">
         <Layout  
-         className='select-none'
+         className='select-none '
         herfFacebook='https://www.facebook.com/divzoon'
         herfInsta='https://www.instagram.com/divzoon/'
         herfTwitter='https://twitter.com/divzoon'
@@ -32,10 +32,10 @@ function index() {
         enUrl={"/"}
         arUrl={"/ar"}
         title="DivDash | by Divzoon">
-       <div className=" pt-20 bg-indigo-50">   <h1>About page: </h1> </div>
+       <div className="bodybackground dark:bg-gray-900">   <h1>About page: </h1> </div>
       
         </Layout>
-   </>
+   </div>
       
       
 
