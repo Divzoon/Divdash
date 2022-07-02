@@ -11,7 +11,6 @@ const currentYear = new Date().getFullYear();
 function Layout ( props ) {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [transMenu, setTransMenu] = useState(false);
-  const [navbarVisibility, setNavbarVisibility] = useState("");
 
   const toggler = () => {
     setBurgerMenu(!burgerMenu);
@@ -49,7 +48,7 @@ function Layout ( props ) {
     <div   style={{ fontFamily: "Poppins-bold", width: "400" }}
       className={
    
-           "   active z-50  justify-center bg-gray-900 fixed backdrop-blur-xl   w-full "
+           "   active z-50  justify-center dark:bg-[#080a0eeb] bg-gray-900 fixed backdrop-blur-xl   w-full "
           
       }>
       <div className='px-4  grid grid-cols-3 py-1 max-w-[1800px] mx-auto  w-full    h-[50px]'>
@@ -398,14 +397,7 @@ function Layout ( props ) {
 
     </header>
     {props.children}
-    <footer className=' absolute bottom-0 w-full bg-gray-900 font-sans font-semibold duration-500 hover:text-red-500 justify-center text-center h-12 pt-2 text-gray-300'>
-      <a
-        style={{ fontFamily: "elwatanP", width: "400" }}
-        href='https://www.divzoon.com/'
-        className='text-xs sm:text-md text-white duration-500 hover:text-red-500'>
-        Divzoon © {currentYear} - 2018 All Rights Reserved
-      </a>
-    </footer>
+
   </div>
   )
 }
