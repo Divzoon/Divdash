@@ -2,11 +2,12 @@ import React, { ReactNode,useState } from 'react'
 import Head from 'next/head'
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 type Props = {
   children?: ReactNode
   title?: string
 }
-const currentYear = new Date().getFullYear();
 
 function Layout ( props ) {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -21,14 +22,11 @@ function Layout ( props ) {
       x.style.display = "block ";
     }
   };
+
+  const router = useRouter();
   return (
     <div>
-    <Head>
-      <title>{props.title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel='icon' href='/ico/fig.png' />
-    </Head>
+
     <header>
      
 
@@ -260,7 +258,7 @@ function Layout ( props ) {
                 
                 <button className=' hover:text-white box-decoration-slice shadow-md hover:shadow-red-500/40    focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 duration-300 focus:ring-offset-slate-800  font-bold h-8  px-6 rounded-lg w-full flex items-center text-gray-900 justify-center sm:w-auto bg-gray-200  hover:bg-red-400'>
                   <Link href={props.HerfDash} passHref>
-                    <h4 className='m-auto font-bold text-gray-900 text-sm duration-300 hover:text-white'>Go Home  </h4>
+                    <h4 className='m-auto font-bold text-gray-900 select-none  text-sm duration-300 hover:text-white'>Go Home  </h4>
                   </Link>
 
                 </button>
@@ -314,7 +312,6 @@ function Layout ( props ) {
             </div>
           </Link>
         </div>
-
         <div className=' select-none mx-12 cursor-pointer  m-3 mb-5 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfContact} passHref>
             <div className='  hover:bg-gray-800/40 duration-300  py-2  text-xl font-semibold text-gray-300 rounded-xl'>
@@ -324,8 +321,8 @@ function Layout ( props ) {
         </div>
         <div className=' select-none mx-12 cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfDash} passHref>
-            <div className='bg-gray-300 justify-center flex  hover:bg-red-400 duration-300 pt-1 text-xl font-semibold text-gray-900 rounded-xl'>
-              <span>Go Home</span>
+            <div className='bg-gray-300 justify-center flex select-none  hover:bg-red-400 duration-300 pt-1 text-xl font-semibold text-gray-900 rounded-xl'>
+              <span className="select-none ">Go Home</span>
 
             </div>
           </Link>
@@ -381,6 +378,11 @@ function Layout ( props ) {
           </div>
         </div>
       </div>
+
+
+
+
+    
     </div>
 
 
@@ -396,7 +398,7 @@ function Layout ( props ) {
 
 
     </header>
-    {props.children}
+ 
 
   </div>
   )

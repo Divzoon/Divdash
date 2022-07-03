@@ -55,3 +55,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.TogglerDisplay {
+  display: none;
+}
+
+.sticky-thc {
+  div {
+    position: sticky;
+    top: 0;
+  }
+  }
