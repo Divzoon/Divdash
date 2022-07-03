@@ -46,7 +46,7 @@ function Layout ( props ) {
     <div   style={{ fontFamily: "Poppins-bold", width: "400" }}
       className={
    
-           "   active z-50  justify-center dark:bg-[#080a0eeb] bg-gray-900 fixed backdrop-blur-xl   w-full "
+           "   active z-50 mt-12 justify-center backdrop-blur-sm dark:bg-[#080a0eeb] bg-gray-900 fixed   w-full "
           
       }>
       <div className='px-4  grid grid-cols-3 py-1 max-w-[1800px] mx-auto  w-full    h-[50px]'>

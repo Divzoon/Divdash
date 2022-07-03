@@ -17,9 +17,9 @@ function index() {
 
       
       
-   <div className=" box-content  overflow-hidden relative">
+   <div className=" box-content   overflow-hidden relative">
         <Layout  
-         className='select-none sticky-thc '
+         className='select-none '
         herfFacebook='https://www.facebook.com/divzoon'
         herfInsta='https://www.instagram.com/divzoon/'
         herfTwitter='https://twitter.com/divzoon'
