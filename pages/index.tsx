@@ -17,7 +17,7 @@ function index() {
 
       
       
-   <div className=" box-content   overflow-hidden relative">
+   <div className=" box-content  min-h-screen overflow-hidden overflow-y-auto relative">
         <Layout  
          className='select-none '
         herfFacebook='https://www.facebook.com/divzoon'
@@ -34,20 +34,16 @@ function index() {
         enUrl={"/"}
         arUrl={"/ar"}
         title="DivDash | by Divzoon"/>
-       <div className="">   <h1>About page: </h1> </div>
-       <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>    <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
-        <div className="h-[300px] bg-red-500 ">df</div>
- 
 
-        <Footer/>
+<div className='h-[300px] bg-red-300'></div>
+<div className='h-[300px] bg-red-300'></div>
+<div className='h-[300px] bg-red-300'></div>
+<div className='h-[300px] bg-red-300'></div>
+<div className='h-[300px] bg-red-300'></div>
 
+<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer />
+</div>
+     
    </div>
       
       

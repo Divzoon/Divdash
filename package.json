@@ -9,8 +9,8 @@
   "dependencies": {
     "i18n": "^0.15.0",
     "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",

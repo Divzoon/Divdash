@@ -60,3 +60,25 @@ a {
   display: none;
 }
 
+  
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #090d18;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #11182c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #202c4e;
+}
+* {
+  box-sizing: border-box;
+}

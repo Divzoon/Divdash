@@ -2,19 +2,8 @@ const nextConfig = {
     // other stuff
         reactStrictMode: true,
     i18n: {
-      defaultLocale: 'en',
-      locales: ['en', 'ar'],
-      localeDetection: false,
+      defaultLocale: 'en-US',
+      locales: ['en-US', 'arb-EG'],
     },
-    trailingSlash: true,
-    domains: [
-      {
-        domain: 'divzoon.com',
-        defaultLocale: 'en',
-      },
-      {
-        domain: 'ar.divzoon.com',
-        defaultLocale: 'ar',
-      },
-    ],
+  
   };
