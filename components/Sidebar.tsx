@@ -16,17 +16,18 @@ function Sidebar() {
             />
             </div>
               <div className="mt-12 select-none ">
-                <div className="m-1 flex justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg ">
-                    <h4>Home</h4>
-                   <div className="bg-red-600 relative mt-1 h-5 w-5">
+                <div className="m-1 hover:opacity-50   gap-2 flex justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg ">
+                  
+                   <div className=" relative mt-[8px] h-4 w-4">
                    <Image
-              className='hover:opacity-50   duration-700'
+              className=''
               src={"/ico/main.png"}
               alt='divzoon'
               layout='fill'
               loading='eager'
             />
                    </div>
+                   <h4>Home</h4>
                 </div>
                 
               </div>
