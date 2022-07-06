@@ -82,3 +82,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+hr.hrcolor {
+  border: 1px solid #1c1d1f;
+}

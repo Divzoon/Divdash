@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import { useRouter } from "next/router";
 import Footer from '../components/Footer';
 import { useCallback, useState, useEffect } from 'react';
+import Sidebar from './../components/Sidebar';
 
 const currentYear = new Date().getFullYear();
 function index() {
@@ -34,12 +35,13 @@ function index() {
         enUrl={"/"}
         arUrl={"/ar"}
         title="DivDash | by Divzoon"/>
+ <Sidebar/>
 
-<div className='h-[300px] bg-red-300'></div>
-<div className='h-[300px] bg-red-300'></div>
-<div className='h-[300px] bg-red-300'></div>
-<div className='h-[300px] bg-red-300'></div>
-<div className='h-[300px] bg-red-300'></div>
+<div className='h-[300px] bg-gray-100'></div>
+<div className='h-[300px] bg-gray-100'></div>
+<div className='h-[300px] bg-gray-100'></div>
+<div className='h-[300px] bg-gray-100'></div>
+<div className='h-[300px] bg-gray-100'></div>
 
 <div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer />
 </div>

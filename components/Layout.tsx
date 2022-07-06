@@ -1,5 +1,4 @@
 import React, { ReactNode,useState } from 'react'
-import Head from 'next/head'
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -46,21 +45,13 @@ function Layout ( props ) {
     <div   style={{ fontFamily: "Poppins-bold", width: "400" }}
       className={
    
-           "   active z-50 mt-12 justify-center backdrop-blur-sm dark:bg-[#080a0eeb] bg-gray-900 fixed   w-full "
+           "   active z-50 mt-12 justify-center  backdrop-blur-sm   dark:bg-[#10141c] bg-gray-900 fixed   w-full "
           
       }>
       <div className='px-4  grid grid-cols-3 py-1 max-w-[1800px] mx-auto  w-full    h-[50px]'>
         <Link href={props.herflogoLink} passHref>
           <div className=' pt-1  select-none cursor-pointer '>
-            <Image
-              className='hover:opacity-50   duration-700'
-              src={props.herflogo}
-              alt='divzoon'
-              height='26'
-              width='110'
-              loading='eager'
-              quality={100}
-            />
+           
           </div>
         </Link>
         <div className='lg:flex pt-2 hidden text-stone-100 select-none cursor-pointer  gap-4 justify-center mx-8'>
@@ -380,9 +371,9 @@ function Layout ( props ) {
       </div>
 
 
+<hr className='hrcolor'/>
 
-
-    
+  
     </div>
 
 
@@ -398,7 +389,6 @@ function Layout ( props ) {
 
 
     </header>
- 
 
   </div>
   )
