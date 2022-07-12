@@ -1,4 +1,4 @@
-const nextConfig = {
+module.exports = {
     // other stuff
         reactStrictMode: true,
     i18n: {
