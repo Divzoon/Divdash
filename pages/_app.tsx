@@ -80,7 +80,7 @@ useEffect(() => {
 
 return (
     <div >
-    <Head children={''}>
+    <Head {...pageProps}>
       <title>{"DivDash | by Divzoon"}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
