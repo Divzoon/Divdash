@@ -3,7 +3,7 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <div className=" text-white dark:bg-[#080a0e]  flex-row z-40   bg-[#0d151d] fixed h-full max-w-[340px] w-[200px] lg:w-[300px]  text-white">
+    <div className="  dark:bg-[#080a0e]  flex-row z-40   bg-[#0d151d] fixed h-full max-w-[340px] w-[200px] lg:w-[300px]  text-white">
          <div className=' pt-28  '>
            <div className="justify-center mx-auto flex"><Image
               className='hover:opacity-50   duration-700'
