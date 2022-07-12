@@ -34,11 +34,10 @@ function index() {
         title="DivDash | by Divzoon"/>
  <Sidebar/>
 
-<div className='h-[300px] bg-gray-100'></div>
-<div className='h-[300px] bg-gray-100'></div>
-<div className='h-[300px] bg-gray-100'></div>
-<div className='h-[300px] bg-gray-100'></div>
-<div className='h-[300px] bg-gray-100'></div>
+<div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
+  test
+</div>
+
 
 <div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer />
 </div>
