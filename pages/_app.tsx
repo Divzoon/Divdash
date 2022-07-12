@@ -1,25 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
-import Footer from '../components/Footer';
 import { NextUIProvider } from '@nextui-org/react';
 
 import '../styles/index.css'
 import Head from 'next/head';
-import { useRouter } from "next/router";
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-    const router = useRouter();
 
-    const currentYear = new Date().getFullYear();
 
  let switcherCounter:number=0;
   useEffect(() => {
   
 
 
-  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+  let themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  let themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
   
   // Change the icons inside the button based on previous settings
   if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -28,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       themeToggleDarkIcon.classList.remove('hidden');
   }
   
-  var themeToggleBtn = document.getElementById('theme-toggle');
+  let themeToggleBtn = document.getElementById('theme-toggle');
   
   themeToggleBtn.addEventListener('click', function() {
   

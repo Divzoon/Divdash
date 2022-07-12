@@ -1,7 +1,6 @@
 import React, { ReactNode,useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 type Props = {
   children?: ReactNode
@@ -14,7 +13,7 @@ function Layout ( props ) {
 
   const toggler = () => {
     setBurgerMenu(!burgerMenu);
-    var x = document.getElementById("togglerDiv");
+    let x = document.getElementById("togglerDiv");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -22,7 +21,6 @@ function Layout ( props ) {
     }
   };
 
-  const router = useRouter();
   return (
     <div>
 

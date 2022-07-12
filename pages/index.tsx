@@ -1,12 +1,9 @@
 import Layout from '../components/Layout'
-import { useRouter } from "next/router";
 import Footer from '../components/Footer';
-import { useCallback, useState, useEffect } from 'react';
 import Sidebar from './../components/Sidebar';
 
 const currentYear = new Date().getFullYear();
 function index() {
-  const router = useRouter();
 
 
   return (
