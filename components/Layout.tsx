@@ -24,7 +24,6 @@ function Layout ( props ) {
 
   const router = useRouter();
   const {locale}=router;
-  const isAr= locale === "ar"?true:false;
 
   return (
     <div>

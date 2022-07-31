@@ -1,9 +1,7 @@
 import React from 'react'
-import { useRouter } from "next/router";
 
 function Footer(props) {
   const currentYear:number = new Date().getFullYear();
-  const router = useRouter();
 
   return (
 
