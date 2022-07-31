@@ -1,6 +1,7 @@
 import React, { ReactNode,useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 type Props = {
   children?: ReactNode
@@ -20,6 +21,10 @@ function Layout ( props ) {
       x.style.display = "block ";
     }
   };
+
+  const router = useRouter();
+  const {locale}=router;
+  const isAr= locale === "ar"?true:false;
 
   return (
     <div>
@@ -247,7 +252,7 @@ function Layout ( props ) {
                 
                 <button className=' hover:text-white box-decoration-slice shadow-md hover:shadow-red-500/40    focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 duration-300 focus:ring-offset-slate-800  font-bold h-8  px-6 rounded-lg w-full flex items-center text-gray-900 justify-center sm:w-auto bg-gray-200  hover:bg-red-400'>
                   <Link href={props.HerfDash} passHref>
-                    <h4 className='m-auto font-bold text-gray-900 select-none  text-sm duration-300 hover:text-white'>Go Home  </h4>
+                    <h4  className={`${locale=="ar"?"textStyleAr":""}${' m-auto font-bold text-gray-900 select-none  text-sm duration-300 hover:text-white'}`}>{props.HomeBtn} </h4>
                   </Link>
 
                 </button>

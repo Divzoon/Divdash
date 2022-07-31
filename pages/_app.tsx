@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react'
 import { AppProps } from 'next/app'
 import { NextUIProvider } from '@nextui-org/react';
+import { createRoot } from 'react-dom/client';
+import './i18n';
 
 import '../styles/index.css'
 import Head from 'next/head';

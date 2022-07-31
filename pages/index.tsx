@@ -1,10 +1,15 @@
 import Layout from '../components/Layout'
 import Footer from '../components/Footer';
 import Sidebar from './../components/Sidebar';
+import { useRouter } from 'next/router';
+import en from '../translation/en'
+import ar from "../translation/ar"
 
 const currentYear = new Date().getFullYear();
 function index() {
-
+const router = useRouter();
+const {locale}=router;
+const trans= locale==="en"?en:ar;
 
   return (
   
@@ -16,6 +21,7 @@ function index() {
       
       
    <div className=" box-content  min-h-screen overflow-hidden overflow-y-auto relative">
+      
         <Layout  
          className='select-none '
         herfFacebook='https://www.facebook.com/divzoon'
@@ -29,17 +35,19 @@ function index() {
         herflogo='/ico/1.png'
         imgFlagArabic='/Images/flags/Egypt.png'
         imgFlagEnglish='/Images/flags/Usa.png'
-        enUrl={"/"}
+        enUrl={"/en"}
         arUrl={"/ar"}
-        title="DivDash | by Divzoon"/>
+HomeBtn={trans.HomeBtn}
+title="DivDash | by Divzoon"/>
  <Sidebar/>
 
 <div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
   test
+  {trans.HomeBtn}
 </div>
 
 
-<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer />
+<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer footerTrans={locale}/>
 </div>
      
    </div>
