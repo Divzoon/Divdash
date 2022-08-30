@@ -8,7 +8,6 @@ import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-
  let switcherCounter:number=0;
   useEffect(() => {
   
@@ -103,7 +102,7 @@ return (
 </button>
 </div>
 <NextUIProvider>
-  <Component   {...pageProps} />
+  <Component   {...pageProps }  />
   </NextUIProvider>
   </div>
   )

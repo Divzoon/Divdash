@@ -24,7 +24,8 @@ function Layout ( props ) {
 
   const router = useRouter();
   const {locale}=router;
-
+  let pureRoute =router.asPath.replace("/ar","").replace("/en","");
+console.log(pureRoute)
   return (
     <div>
 
@@ -217,7 +218,7 @@ function Layout ( props ) {
                     </svg>
                   </Link>
                 </div>
-
+          
                 <div className='duration-500 active:scale-95  hover:text-gray-400'>
                   {" "}
                   <Link href={props.herfFacebook} passHref>
@@ -260,7 +261,7 @@ function Layout ( props ) {
               {/*the Transition language list */}
               {transMenu ? (
                 <div className=' mt-4 hidden lg:inline-block justify-start bg-gray-800/40 w-24 rounded-sm  py-1 h-18'>
-                  <Link href={"/ar"+router.asPath.replace("/ar","").replace("/en","")} passHref>
+                  <Link href={"/ar"+pureRoute} passHref>
                     <div className=' flex px-2 pt-1 justify-around opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle   bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image
@@ -274,8 +275,9 @@ function Layout ( props ) {
                     </div>
                   </Link>
                   <div className='py-[2px]'></div>
-                  <Link href={"/en"+router.asPath.replace("/ar","").replace("/en","")} passHref>
-                    <div className='flex justify-around px-2 pt-1 opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle  gap-1 bg-gray-700 mx-1  rounded-sm'>
+                  
+                  <Link href={ pureRoute+ 'en' } passHref>
+                    <div onClick={() => { router.push(pureRoute ,pureRoute , { locale: 'en' }) }}  className='flex justify-around px-2 pt-1 opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle  gap-1 bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image
                           className=''
