@@ -5,5 +5,8 @@ export default{
     SideNavMessagesText:"تواصل",
     SideNavSettingsText:"الاعدادات",
     SideNavHelpText:"المساعدة",
+    CurrentBalance:" : رصيدك الحالي",
+    NextPayment:" : المدفوعات القادمة",
+    LearnMore:"< المزيد من التفاصيل",
 
 }
