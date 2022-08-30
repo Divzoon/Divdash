@@ -38,7 +38,7 @@ function Sidebar(props) {
                    </div>
                    <h4>{props.Home}</h4>
                 </div>
-                
+                  
               </div>
 </Link>
 
