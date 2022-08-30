@@ -260,7 +260,7 @@ function Layout ( props ) {
               {/*the Transition language list */}
               {transMenu ? (
                 <div className=' mt-4 hidden lg:inline-block justify-start bg-gray-800/40 w-24 rounded-sm  py-1 h-18'>
-                  <Link href={props.arUrl} passHref>
+                  <Link href={"/ar"+router.asPath.replace("/ar","").replace("/en","")} passHref>
                     <div className=' flex px-2 pt-1 justify-around opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle   bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image
@@ -274,7 +274,7 @@ function Layout ( props ) {
                     </div>
                   </Link>
                   <div className='py-[2px]'></div>
-                  <Link href={props.enUrl} passHref>
+                  <Link href={"/en"+router.asPath.replace("/ar","").replace("/en","")} passHref>
                     <div className='flex justify-around px-2 pt-1 opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle  gap-1 bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image

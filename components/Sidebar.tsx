@@ -26,7 +26,7 @@ function Sidebar(props) {
                    <Image
               className=''
               src={"/ico/main.png"}
-              alt='divzoon'
+              alt='Home tap'
               layout='fill'
               loading='eager'
             />
@@ -44,7 +44,7 @@ function Sidebar(props) {
                    <Image
               className=''
               src={"/ico/projects.png"}
-              alt='divzoon'
+              alt='projects tap'
               layout='fill'
               loading='eager'
             />
@@ -63,7 +63,7 @@ function Sidebar(props) {
                    <Image
               className=''
               src={"/ico/chat.png"}
-              alt='divzoon'
+              alt='messages tap'
               layout='fill'
               loading='eager'
             />
@@ -81,7 +81,7 @@ function Sidebar(props) {
                    <Image
               className=''
               src={"/ico/settings.png"}
-              alt='divzoon'
+              alt='setting tap'
               layout='fill'
               loading='eager'
             />
@@ -100,7 +100,7 @@ function Sidebar(props) {
                    <Image
               className=''
               src={"/ico/help.png"}
-              alt='divzoon'
+              alt='Help tap'
               layout='fill'
               loading='eager'
             />
