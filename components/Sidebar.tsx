@@ -22,7 +22,7 @@ function Sidebar(props) {
               <div className="mt-12 select-none active:scale-95 duration-300 ">
                 <div className={`${locale ==="en"?"flex  ":"flex flex-row-reverse "}${"m-1 hover:opacity-50   gap-2  justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg "}`}>
                   
-                   <div className=" relative mt-[8px] h-5 w-5">
+                   <div className=" relative mt-[6px] h-5 w-5">
                    <Image
               className=''
               src={"/ico/main.png"}
@@ -40,7 +40,7 @@ function Sidebar(props) {
               <div className=" select-none  active:scale-95 duration-300 ">
               <div className={`${locale ==="en"?"flex  ":"flex flex-row-reverse "}${"m-1 hover:opacity-50   gap-2  justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg "}`}>
                   
-                   <div className=" relative mt-[8px] h-5 w-5">
+                   <div className=" relative mt-[7px] h-5 w-5">
                    <Image
               className=''
               src={"/ico/projects.png"}
@@ -59,7 +59,7 @@ function Sidebar(props) {
               <div className=" select-none  active:scale-95 duration-300 ">
               <div className={`${locale ==="en"?"flex  ":"flex flex-row-reverse "}${"m-1 hover:opacity-50   gap-2  justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg "}`}>
                   
-                   <div className=" relative mt-[8px] h-6 w-6">
+                   <div className=" relative mt-[5px] h-6 w-6">
                    <Image
               className=''
               src={"/ico/chat.png"}
@@ -77,7 +77,7 @@ function Sidebar(props) {
               <div className=" select-none  active:scale-95 duration-300 ">
               <div className={`${locale ==="en"?"flex  ":"flex flex-row-reverse "}${"m-1 hover:opacity-50   gap-2  justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg "}`}>
                   
-                   <div className=" relative mt-[8px] h-5 w-5">
+                   <div className=" relative mt-[6px] h-5 w-5">
                    <Image
               className=''
               src={"/ico/settings.png"}
@@ -96,7 +96,7 @@ function Sidebar(props) {
               <div className=" select-none  active:scale-95 duration-300 ">
               <div className={`${locale ==="en"?"flex  ":"flex flex-row-reverse "}${"m-1 hover:opacity-50   gap-2  justify-center duration-500 cursor-pointer hover:dark:bg-[#11151d]/60 hover:bg-[#111a24] backdrop-blur-md mx-3 p-1 rounded-lg "}`}>
                   
-                   <div className=" relative mt-[8px] h-5 w-5">
+                   <div className=" relative mt-[6px] h-5 w-5">
                    <Image
               className=''
               src={"/ico/help.png"}
