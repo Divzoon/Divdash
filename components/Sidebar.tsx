@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/router';
-import WaliteSidenav from'./WaliteSidenav';
+import WaliteSidenav from './WaliteSidenav';
 function Sidebar(props) {
   const router = useRouter();
   const {locale}=router;
