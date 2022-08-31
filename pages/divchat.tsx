@@ -34,21 +34,7 @@ const trans= locale==="en"?en:ar;
     arUrl={"/ar"}
 HomeBtn={trans.HomeBtn}
 title="DivDash | by Divzoon"/>
-<Sidebar Home={trans.SideNavHomeText}
-Projects={trans.SideNavProjectsText}
-Messages={trans.SideNavMessagesText}
-Settings={trans.SideNavSettingsText}
-help={trans.SideNavHelpText}
-/>
 
-<div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
-test
-{trans.HomeBtn}
-</div>
-
-
-<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer footerTrans={locale}/>
-</div>
  
 </div>
   

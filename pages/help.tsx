@@ -1,14 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Footer from '../components/Footer';
-import Sidebar from './../components/Sidebar';
 import { useRouter } from 'next/router';
 import en from '../translation/en'
 import ar from "../translation/ar"
 
 
 function help() {
-    const currentYear = new Date().getFullYear();
 const router = useRouter();
 const {locale}=router;
 const trans= locale==="en"?en:ar;
@@ -34,21 +31,7 @@ const trans= locale==="en"?en:ar;
     arUrl={"/ar"}
 HomeBtn={trans.HomeBtn}
 title="DivDash | by Divzoon"/>
-<Sidebar Home={trans.SideNavHomeText}
-Projects={trans.SideNavProjectsText}
-Messages={trans.SideNavMessagesText}
-Settings={trans.SideNavSettingsText}
-help={trans.SideNavHelpText}
-/>
 
-<div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
-test
-{trans.HomeBtn}
-</div>
-
-
-<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer footerTrans={locale}/>
-</div>
  
 </div>
   

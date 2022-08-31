@@ -9,7 +9,7 @@ const {locale}=router;
 const trans= locale==="en"?en:ar;
   return (
     <div style={{ fontFamily: "SfproText ,Poppins-Bold", width: "400" }}  className="h-80">
-        <div className="  mt-9 w-full h-full  justify-center mx-auto flex absolute ">
+        <div className="   w-full h-full  justify-center mx-auto flex absolute ">
         <div className="overflow-hidden dark:bg-[#1c222e] bg-[#333c4f]  h-20 w-20 rounded-full absolute top-0">
         <div className=" hover:scale-105 duration-500  relative mt-[8px] flex justify-center mx-auto h-20 w-20  ">
         <Image

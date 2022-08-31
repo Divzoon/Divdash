@@ -2,6 +2,10 @@ import React, { ReactNode,useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import Sidebar from './Sidebar';
+import en from '../translation/en'
+import ar from "../translation/ar"
+import Footer from '../components/Footer';
 
 type Props = {
   children?: ReactNode
@@ -25,6 +29,7 @@ function Layout ( props ) {
   const router = useRouter();
   const {locale}=router;
     const  pid  = router.asPath
+    const trans= locale==="en"?en:ar;
 
   let pureRoute =router.asPath.replace("/ar","").replace("/en","");
   return (
@@ -49,7 +54,7 @@ function Layout ( props ) {
     <div   style={{ fontFamily: "Poppins-bold", width: "400" }}
       className={
    
-           "   active z-50 mt-12 justify-center  backdrop-blur-sm   dark:bg-[#10141c] bg-gray-900 fixed   w-full "
+           "   active z-50  justify-center  backdrop-blur-sm   dark:bg-[#10141c] bg-gray-900 fixed   w-full "
           
       }>
       <div className='px-4  grid grid-cols-3 py-1 max-w-[1800px] mx-auto  w-full    h-[50px]'>
@@ -394,6 +399,29 @@ function Layout ( props ) {
 
 
     </header>
+
+
+
+
+
+
+
+    <Sidebar Home={trans.SideNavHomeText}
+Projects={trans.SideNavProjectsText}
+Messages={trans.SideNavMessagesText}
+Settings={trans.SideNavSettingsText}
+help={trans.SideNavHelpText}
+/>
+
+<div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
+{trans.HomeBtn}
+</div>
+
+
+<div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer footerTrans={locale}/>
+</div>
+
+
 
   </div>
   )
