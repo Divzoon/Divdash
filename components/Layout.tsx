@@ -24,6 +24,8 @@ function Layout ( props ) {
 
   const router = useRouter();
   const {locale}=router;
+    const  pid  = router.asPath
+
   let pureRoute =router.asPath.replace("/ar","").replace("/en","");
 console.log(pureRoute)
   return (
@@ -261,7 +263,7 @@ console.log(pureRoute)
               {/*the Transition language list */}
               {transMenu ? (
                 <div className=' mt-4 hidden lg:inline-block justify-start bg-gray-800/40 w-24 rounded-sm  py-1 h-18'>
-                  <Link href={"/ar"+pureRoute} passHref>
+                  <Link href={pid} passHref locale="ar">
                     <div className=' flex px-2 pt-1 justify-around opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle   bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image
@@ -276,7 +278,7 @@ console.log(pureRoute)
                   </Link>
                   <div className='py-[2px]'></div>
                   
-                  <Link href={ pureRoute+ 'en' } passHref>
+                  <Link href={pid} passHref locale="en">
                     <div onClick={() => { router.push(pureRoute ,pureRoute , { locale: 'en' }) }}  className='flex justify-around px-2 pt-1 opacity-60 hover:opacity-100 select-none duration-500 cursor:pointer align-middle  gap-1 bg-gray-700 mx-1  rounded-sm'>
                       <div>
                         <Image
@@ -323,7 +325,7 @@ console.log(pureRoute)
           </Link>
         </div>
         <div className=' select-none justify-content justify-center   grid grid-cols-2 gap-2 mx-12 cursor-pointer  m-3 text-center lg:hidden'>
-          <Link className='text-gray-300' href={props.arUrl} passHref>
+          <Link className='text-gray-300' href={pid} passHref locale="ar">
             <div className='flex  gap-1 justify-content pt-1 justify-center bg-gray-300  hover:bg-gray-400 duration-300  text-xl font-semibold text-gray-900 rounded-xl'>
               <div>
                 <Image
@@ -337,7 +339,7 @@ console.log(pureRoute)
               <h4>العربية</h4>
             </div>
           </Link>
-          <Link className='text-gray-300' href={props.enUrl} passHref>
+          <Link className='text-gray-300' href={pid} passHref locale="en">
             <div className='flex gap-1 justify-content justify-center bg-gray-300  hover:bg-gray-400  duration-300 pt-1 text-xl font-semibold text-gray-900 rounded-xl'>
               <div>
                 <Image
