@@ -27,7 +27,6 @@ function Layout ( props ) {
     const  pid  = router.asPath
 
   let pureRoute =router.asPath.replace("/ar","").replace("/en","");
-console.log(pureRoute)
   return (
     <div>
 

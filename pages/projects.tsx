@@ -8,7 +8,6 @@ import ar from "../translation/ar"
 
 
 function projects() {
-    const currentYear = new Date().getFullYear();
 const router = useRouter();
 const {locale}=router;
 const trans= locale==="en"?en:ar;

@@ -19,8 +19,8 @@ function Sidebar(props) {
               alt='divzoon'
               height='26'
               width='110'
-              loading='eager'
-              quality={100}
+              priority      
+                      quality={100}
             />
             </div>
             <Link  href={"/"} passHref>
@@ -54,6 +54,7 @@ function Sidebar(props) {
               alt='projects tap'
               layout='fill'
               loading='eager'
+              priority
             />
                    </div>
                    <h4>{props.Projects}</h4>
@@ -70,11 +71,10 @@ function Sidebar(props) {
                   
                    <div className=" relative mt-[5px] h-5 w-5">
                    <Image
-              className=''
               src={"/ico/chat.png"}
               alt='messages tap'
               layout='fill'
-              loading='eager'
+              priority 
             />
                    </div>
                    <h4>{props.Messages}</h4>
@@ -95,8 +95,7 @@ function Sidebar(props) {
               src={"/ico/settings.png"}
               alt='setting tap'
               layout='fill'
-              loading='eager'
-            />
+              priority            />
                    </div>
                    <h4>{props.Settings}</h4>
                 </div>
@@ -115,8 +114,7 @@ function Sidebar(props) {
               src={"/ico/help.png"}
               alt='Help tap'
               layout='fill'
-              loading='eager'
-            />
+              priority            />
                    </div>
                    <h4>{props.help}</h4>
                 </div>
