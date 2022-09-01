@@ -17,8 +17,9 @@ const trans= locale==="en"?en:ar;
               src={props.companyimage}
               alt='Profile'
               layout='fill'
-              loading='eager'
-            /></div>
+            priority={true}
+
+/></div>
         </div>
             <div className="dark:bg-[#10141c]  bg-[#293140]  rounded-xl w-[85%] justify-center mx-auto mt-7 flex h-56">
       

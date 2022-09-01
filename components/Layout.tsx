@@ -6,13 +6,16 @@ import Sidebar from './Sidebar';
 import en from '../translation/en'
 import ar from "../translation/ar"
 import Footer from '../components/Footer';
+import DarkMode from './DarkMode'
+import NavLinks from './NavLinks';
+
 
 type Props = {
   children?: ReactNode
   title?: string
 }
 
-function Layout ( props ) {
+function Layout ( props  ) {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [transMenu, setTransMenu] = useState(false);
 
@@ -50,7 +53,6 @@ function Layout ( props ) {
 
 
 
-
     <div   style={{ fontFamily: "Poppins-bold", width: "400" }}
       className={
    
@@ -60,7 +62,8 @@ function Layout ( props ) {
       <div className='px-4  grid grid-cols-3 py-1 max-w-[1800px] mx-auto  w-full    h-[50px]'>
         <Link href={props.herflogoLink} passHref>
           <div className=' pt-1  select-none cursor-pointer '>
-           
+          <DarkMode/>
+
           </div>
         </Link>
         <div className='lg:flex pt-2 hidden text-stone-100 select-none cursor-pointer  gap-4 justify-center mx-8'>
@@ -306,7 +309,16 @@ function Layout ( props ) {
       <div
         id='togglerDiv'
         className=' absolute TogglerDisplay lg:hidden uppercase h-screen lg:h-0 right-0 rounded-b-xl  max-w-[600px]  bg-gray-900  w-full'>
-        <div className=' select-none mx-12  cursor-pointer  m-3 text-center lg:hidden'>
+       
+        <NavLinks
+           Home={trans.SideNavHomeText}
+           Projects={trans.SideNavProjectsText}
+           Messages={trans.SideNavMessagesText}
+           Settings={trans.SideNavSettingsText}
+           help={trans.SideNavHelpText}
+
+            />
+             <div className=' select-none mx-12  cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfService} passHref>
             <div className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
               Services
@@ -317,14 +329,6 @@ function Layout ( props ) {
           <Link className='text-gray-300' href={props.HerfContact} passHref>
             <div className='  hover:bg-gray-800/40 duration-300  py-2  text-xl font-semibold text-gray-300 rounded-xl'>
               Contact
-            </div>
-          </Link>
-        </div>
-        <div className=' select-none mx-12 cursor-pointer  m-3 text-center lg:hidden'>
-          <Link className='text-gray-300' href={props.HerfDash} passHref>
-            <div className='bg-gray-300 justify-center flex select-none  hover:bg-red-400 duration-300 pt-1 text-xl font-semibold text-gray-900 rounded-xl'>
-              <span className="select-none ">Go Home</span>
-
             </div>
           </Link>
         </div>
@@ -357,8 +361,9 @@ function Layout ( props ) {
               <h4>English</h4>
             </div>
           </Link>
+          
         </div>
-        <div className='lowercase duration-300 hover:bg-gray-700/30 ml-7 rounded-lg flex absolute opacity-60 bottom-24 justify-center text-xs font-thin mx-2'>
+        <div className='uppercase duration-300 left-[2%] hover:bg-gray-700/30  rounded-lg flex absolute opacity-60 bottom-14 justify-center text-xs mx-auto'>
           <div
             className='m-1 col-span-3
            text-gray-400'>
@@ -413,9 +418,8 @@ Settings={trans.SideNavSettingsText}
 help={trans.SideNavHelpText}
 />
 
-<div className='h-[300px] mt-12 dark:bg-black bg-gray-100'>
-{trans.HomeBtn}
-</div>
+
+{props.children}
 
 
 <div className=" bg-red-500 mt-28 w-full  absolute bottom-0">   <Footer footerTrans={locale}/>
