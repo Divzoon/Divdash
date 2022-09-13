@@ -1,11 +1,8 @@
-import Layout from '../components/Layout'
-import Footer from '../components/Footer';
-import Sidebar from './../components/Sidebar';
+
 import { useRouter } from 'next/router';
 import en from '../translation/en'
 import ar from "../translation/ar"
 
-const currentYear = new Date().getFullYear();
 function index() {
 const router = useRouter();
 const {locale}=router;

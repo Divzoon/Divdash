@@ -8,5 +8,12 @@ export default{
     CurrentBalance:"Current Balance :",
     NextPayment:"Next Payment :",
     LearnMore:"Learn More  >",
+    Createacount:"Create your account 😊",
+    BusinessName:"Business Name",
+    Email:"Email",
+    Pass:"Password",
+    passPlaceHolder:"Enter Strong Password",
+    emailPlaceHolder:"Contact Email",
+
 
 }

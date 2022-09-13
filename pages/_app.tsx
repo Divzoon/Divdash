@@ -1,14 +1,9 @@
 import { AppProps } from 'next/app'
 import { NextUIProvider } from '@nextui-org/react';
-import Layout from '../components/Layout'
+import layoutFillout from '../components/layoutFillout'
 import { useRouter } from 'next/router';
-import en from '../translation/en'
-import ar from "../translation/ar"
 import '../styles/index.css'
 import Head from 'next/head';
-
-
-
 
 
 
@@ -17,16 +12,19 @@ import Head from 'next/head';
 
 
 
-function MyApp({ Component, pageProps }: AppProps) {
-    const router = useRouter();
-    const {locale}=router;
-    const trans= locale==="en"?en:ar;
+function MyApp({ Component, pageProps,...appProps }: AppProps) {
+  const router = useRouter();
+  let div ="div";
+
+
+
 
 // for the header functionality 
 
 
 
-
+const isLayoutNeeded = [`/AuthPage`].includes(appProps.router.pathname);
+const LayoutComponent = isLayoutNeeded ? div :layoutFillout ;
 
 
 
@@ -50,25 +48,12 @@ return (
     </Head>
 
 <NextUIProvider>
-<Layout  
-         className='select-none '
-        herfFacebook='https://www.facebook.com/divzoon'
-        herfInsta='https://www.instagram.com/divzoon/'
-        herfTwitter='https://twitter.com/divzoon'
-        HerfDash='https://www.divzoon.com/'
-        Herfabout='/about'
-        HerfContact='/Contact'
-        HerfService='/Services'
-        herflogoLink={"/"}
-        herflogo='/ico/1.png'
-        imgFlagArabic='/Images/flags/Egypt.png'
-        imgFlagEnglish='/Images/flags/Usa.png'
-        enUrl={"/en"}
-        arUrl={"/ar"}
-HomeBtn={trans.HomeBtn}
-title="DivDash | by Divzoon"> 
+
+
+<LayoutComponent>
   <Component   {...pageProps }  />
-  </Layout>
+  </LayoutComponent>
+
   </NextUIProvider>
   </div>
   )
