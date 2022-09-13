@@ -309,8 +309,9 @@ function Layout ( props  ) {
       <div
         id='togglerDiv'
         className=' absolute TogglerDisplay lg:hidden uppercase h-screen lg:h-0 right-0 rounded-b-xl  max-w-[600px]  bg-gray-900  w-full'>
-       
-        <NavLinks
+        
+        <div className="lg:hidden">
+        <NavLinks 
            Home={trans.SideNavHomeText}
            Projects={trans.SideNavProjectsText}
            Messages={trans.SideNavMessagesText}
@@ -318,6 +319,8 @@ function Layout ( props  ) {
            help={trans.SideNavHelpText}
 
             />
+        
+        </div>
              <div className=' select-none mx-12  cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfService} passHref>
             <div className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
