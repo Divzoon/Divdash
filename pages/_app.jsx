@@ -1,4 +1,3 @@
-import { AppProps } from 'next/app'
 import { NextUIProvider } from '@nextui-org/react';
 import layoutFillout from '../components/layoutFillout'
 import { useRouter } from 'next/router';
@@ -12,8 +11,7 @@ import Head from 'next/head';
 
 
 
-function MyApp({ Component, pageProps,...appProps }: AppProps) {
-  const router = useRouter();
+function MyApp({ Component, pageProps,...appProps }) {
   let div ="div";
 
 

@@ -15,6 +15,8 @@ function AuthPage() {
     const [nameRing, setnameRing] = useState(false);
     const [emailRing, setemailRing] = useState(false);
     const [messageRing, setmessageRing] = useState(false);
+    const [seePass, setSeePass] = useState(false);
+
   return (
 
       <div className=' bg-[#0b1121] h-screen   pb-12'>
@@ -156,8 +158,9 @@ function AuthPage() {
 
                         <div className='w-full'>
                           <p                         style={{ fontFamily: "Poppins-Bold , SfproText" , width: "400" }}
- className={`${router.asPath.includes("/ar")?"text-left":"text-right"}${' ml-1 my-1'}`}>{trans.Pass}</p>
-                          <input
+ className={`${router.asPath.includes("/ar")?"text-left":"text-right"}${' relative ml-1 my-1'}`}>{trans.Pass}</p>
+<div className="relative">
+<input
                             onClick={() => {
                                 
                                 setmessageRing(!nameRing);
@@ -169,12 +172,18 @@ function AuthPage() {
                             w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20
                             ${messageRing ? "ring-2 duration-100" : ""}  ${router.asPath.includes(`/ar`)?"text-left":"text-right"}`}
                             name='name'
-                            type="password"
+                            type={seePass?"text":"password"}
                             placeholder={trans.passPlaceHolder}
                             minLength={8} maxLength={30}
                             required
-                          />
-                          
+                          /> 
+<div onClick={()=>{
+    setSeePass(!seePass)
+}} className={`${"h-5 w-5 cursor-pointer absolute top-3 mx-2"} ${router.asPath.includes(`/ar`)?"right-2":"left-2"}`}>
+<Image src={`${"/ico/eye/"}${seePass?"open.png":"close.png"}`} layout="fill"/> 
+
+</div>
+</div>
                         </div>
                        
 <div className="text-gray-50" >

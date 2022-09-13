@@ -1,12 +1,7 @@
 
-import { useRouter } from 'next/router';
-import en from '../translation/en'
-import ar from "../translation/ar"
+
 
 function index() {
-const router = useRouter();
-const {locale}=router;
-const trans= locale==="en"?en:ar;
 
   return (
  
