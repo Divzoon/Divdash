@@ -177,9 +177,9 @@ function AuthPage() {
                             minLength={8} maxLength={30}
                             required
                           /> 
-<div  onClick={()=>{
+<div onClick={()=>{
     setSeePass(!seePass)
-}} className={`${"h-5 w-5  cursor-pointer absolute top-3 mx-2"} ${router.asPath.includes(`/ar`)?"right-2":"left-2"}`}>
+}} className={`${"h-5 w-5 cursor-pointer absolute top-3 mx-2"} ${router.asPath.includes(`/ar`)?"right-2":"left-2"}`}>
 <Image src={`${"/ico/eye/"}${seePass?"open.png":"close.png"}`} layout="fill"/> 
 
 </div>
