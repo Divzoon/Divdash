@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import imagescontact from "../public/Images/auth.png";
-import { useState, React } from "react";
+import React, { useState } from 'react';
 import en from '../translation/en'
 import ar from "../translation/ar"
+import { Checkbox } from "@nextui-org/react";
+
 function AuthPage() {
     const router = useRouter();
     const {locale}=router;
@@ -47,13 +49,15 @@ function AuthPage() {
         width: "100%",
         height: "100%",
         overflow: "hidden",
-      }} className=' max-w-7xl p-2 relative pt-20  m-auto  justify-center'>
+      }} className=' max-w-7xl p-2 relative pt-20   m-auto  justify-center'>
             
 
             <div className=' w-full  mb-12 '>
               <div className='relative text-gray-200  min-h-[200px] rounded-md  '>
-                <div className='grid md:grid-cols-2 mt-3   items-center justify-center'>
-                  <div className='md:block hidden'>
+                <div className='grid lg:grid-cols-2 mt-3   items-center justify-center'>
+                 
+                 
+                  <div className='lg:block hidden'>
                     <div className='h-[150px] hover:scale-105 duration-1000 md:h-[440px] mb-6 relative'>
                       <Image
                         alt='Header'
@@ -91,9 +95,6 @@ function AuthPage() {
                   </div>
                   <div>
                     <form
-                    action="https://formsubmit.co/support@divzoon.com" 
-
-
                       className='flex  flex-col my-12  items-center lg:justify-start justify-center '
                       method='POST'
                   >
@@ -118,7 +119,6 @@ function AuthPage() {
                             className={`
                             w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20
                             ${nameRing ? "ring-2 duration-100" : ""}`}
-                            label='Name'
                             name='name'
                             type='text'
                             minLength={1} maxLength={20}
@@ -144,8 +144,8 @@ function AuthPage() {
                           
                             className={`
                           w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20
-                          ${emailRing ? "ring-2 duration-100" : ""}${router.asPath.includes(`/ar`)?"text-left":"text-right"} `}
-                            label='Email'
+                          ${emailRing ? "ring-2 duration-100" : ""} ${router.asPath.includes(`/ar`)?"text-left":"text-right"} `}
+  
                             name='email'
                             type='email'
                             minLength={8} maxLength={100}
@@ -168,7 +168,6 @@ function AuthPage() {
                             className={`
                             w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20
                             ${messageRing ? "ring-2 duration-100" : ""}  ${router.asPath.includes(`/ar`)?"text-left":"text-right"}`}
-                            label='Name'
                             name='name'
                             type="password"
                             placeholder={trans.passPlaceHolder}
@@ -177,86 +176,17 @@ function AuthPage() {
                           />
                           
                         </div>
-                        <div className=' w-full m-1 mt-2 select-none rounded-md text-center  px-2 gap-1 bg-gray-700/20'>
-                          {" "}
-                          <p className='my-2 font-semibold'>You Need :</p>
-                          <div className='flex md:flex-none flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
-                            <div className='hover:bg-gray-400/20  cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
-                              {" "}
-                              <label
-                                className='cursor-pointer font-semibold'
-                                htmlFor='web'>
-                                <input
-                                  className='mt-[5px]'
-                                  type='radio'
-                                  name='Need'
-                                  id='web'
-                                  value='website'
-                                
-                                  required
-                                />{" "}
-                                Web development
-                              </label>
-                            </div>
-                            <div className='hover:bg-gray-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
-                              {" "}
-                              <label
-                                className='cursor-pointer font-semibold'
-                                htmlFor='app'>
-                                <input
-                                  className='mt-[5px]'
-                                  type='radio'
-                                  id='app'
-                                  value='application'
-                                  name='Need'
-                               
-                                />{" "}
-                                App development
-                              </label>
-                            </div>
-
-                            <div className='hover:bg-gray-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
-                              {" "}
-                              <label
-                                className='cursor-pointer font-semibold'
-                                htmlFor='Hire'>
-                                {" "}
-                                <input
-                                  className='mt-[5px]'
-                                  type='radio'
-                                  id='Hire'
-                                  name='Need'
-                                  value='Hire Dev'
-                                
-                                />{" "}
-                                Hire Developers
-                              </label>
-                            </div>
-
-                            <div className='hover:bg-gray-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
-                              {" "}
-                              <label
-                                className='cursor-pointer font-semibold'
-                                htmlFor='other'>
-                                {" "}
-                                <input
-                                  className='mt-[5px]'
-                                  type='radio'
-                                  id='other'
-                                  name='Need'
-                                  value='other'
-                                  
-                                />{" "}
-                                Other{" "}
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-
+                       
+<div className="text-gray-50" >
+<Checkbox defaultSelected={true}>
+<p className="text-gray-50 text-sm mt-4" style={{ fontFamily: "Poppins-Bold , SfproText" , width: "400" }}   >I want to receive news, feature updates, discounts, and offers from Termly.</p>
+    </Checkbox>
+    <p className="text-xs mt-3" style={{ fontFamily: "Poppins-Bold , SfproText" , width: "400" }}>By signing up, I agree to Divzoon's <span  className="hover:opacity-75 cursor-pointer duration-300 text-red-400"> Terms and Conditions </span> and  <span className="hover:opacity-75 cursor-pointer duration-300 text-red-400"> Privacy Policy </span>.</p>
+</div>
                       
 
                         <button
-                          className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
+                          className='w-full  m-2 duration-300 select-none bg-red-500 text-white font-bold py-4 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
                           type='submit'>
                           Send
                         </button>
