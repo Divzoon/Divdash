@@ -186,7 +186,7 @@ function AuthPage() {
     setSeePass(!seePass)
 }} className={`${"h-5 w-5 cursor-pointer absolute top-3 mx-2"} ${
   locale === "ar" ?"text-left absolute left-0":"text-right right-0"}`}>
-=======
+
 <Image src={`${"/ico/eye/"}${seePass?"open.png":"close.png"}`} layout="fill"/> 
 
 </div>
