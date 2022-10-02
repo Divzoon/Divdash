@@ -1,7 +1,7 @@
 import React from "react";
 import DashHeader from "../components/DashHeader";
 
-function index() {
+
 
 
 function index() {
