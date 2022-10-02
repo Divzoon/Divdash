@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 import React from "react";
 import DashHeader from "../components/DashHeader";
 
-
-
-
-=======
-import React from 'react'
->>>>>>> parent of 1f40768 (Revert "ل")
 function index() {
 
 
