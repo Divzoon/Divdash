@@ -10,7 +10,7 @@ function AuthPage() {
     const router = useRouter();
     const {locale}=router;
       const trans= locale==="en"?en:ar;
- 
+
 
     const [nameRing, setnameRing] = useState(false);
     const [emailRing, setemailRing] = useState(false);
