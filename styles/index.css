@@ -82,8 +82,16 @@ hr.hrcolor {
   border: 1px solid #1c1d1f;
 }
 
+<<<<<<< HEAD
+.textStyleAr{
+  font-family:SfproText;
+font-size:20px;
+font-weight:normal;
+}
+=======
 .textStyleAr {
   font-family: SfproText;
   font-size: 20px;
   font-weight: normal;
 }
+>>>>>>> main
