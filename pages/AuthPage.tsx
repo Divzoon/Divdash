@@ -161,7 +161,8 @@ function AuthPage() {
 
                         <div className='w-full'>
                           <p                         style={{ fontFamily: "Poppins-Bold , SfproText" , width: "400" }}
- className={`${router.asPath.includes("/ar")?"text-left":"text-right"}${' relative ml-1 my-1'}`}>{trans.Pass}</p>
+ className={`${
+  locale === "en" ?"text-left":"text-right"}${' relative ml-1 my-1'}`}>{trans.Pass}</p>
 <div className="relative">
 <input
                             onClick={() => {
