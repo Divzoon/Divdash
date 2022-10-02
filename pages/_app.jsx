@@ -3,12 +3,9 @@ import { NextUIProvider } from "@nextui-org/react";
 import layoutFillout from "../components/layoutFillout";
 import "../styles/index.css";
 import Head from "next/head";
-import { SessionProvider } from "next-auth/react"
 
-function MyApp({
-  Component,session,pageProps,...appProps }) {
+function MyApp({Component,session,pageProps,...appProps }) {
   let div = "div";
-let auth = false;
   // for the header functionality
   let LayoutComponent;
    let  isLayoutNeeded;
@@ -57,13 +54,11 @@ let auth = false;
 
         <link rel="icon" href="/ico/fig.png" />
       </Head>
-      <SessionProvider session={session}>
       <NextUIProvider>
         <LayoutComponent>
           <Component {...pageProps} />
         </LayoutComponent>
       </NextUIProvider>
-      </SessionProvider>
     </div>
   );
 }

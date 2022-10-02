@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 import en from "../translation/en";
 import ar from "../translation/ar";

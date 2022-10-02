@@ -1,13 +1,9 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Footer from "../components/Footer";
-import Sidebar from "./../components/Sidebar";
 import { useRouter } from "next/router";
 import en from "../translation/en";
 import ar from "../translation/ar";
 
 function divchat() {
-  const currentYear = new Date().getFullYear();
   const router = useRouter();
   const { locale } = router;
   const trans = locale === "en" ? en : ar;
