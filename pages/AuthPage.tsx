@@ -182,10 +182,14 @@ function AuthPage() {
                             minLength={8} maxLength={30}
                             required
                           /> 
-<div onClick={()=>{
+<div  onClick={()=>{
     setSeePass(!seePass)
+<<<<<<< HEAD
 }} className={`${"h-5 w-5 cursor-pointer absolute top-3 mx-2"} ${
   locale === "ar" ?"text-left absolute left-0":"text-right right-0"}`}>
+=======
+}} className={`${"h-5 w-5  cursor-pointer absolute top-3 mx-2"} ${router.asPath.includes(`/ar`)?"right-2":"left-2"}`}>
+>>>>>>> parent of 1f40768 (Revert "ل")
 <Image src={`${"/ico/eye/"}${seePass?"open.png":"close.png"}`} layout="fill"/> 
 
 </div>
