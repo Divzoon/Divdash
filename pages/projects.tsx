@@ -1,29 +1,18 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import Footer from '../components/Footer';
-import Sidebar from './../components/Sidebar';
-import { useRouter } from 'next/router';
-import en from '../translation/en'
-import ar from "../translation/ar"
-
+import React from "react";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
+import Sidebar from "./../components/Sidebar";
+import { useRouter } from "next/router";
+import en from "../translation/en";
+import ar from "../translation/ar";
 
 function projects() {
-const router = useRouter();
-const {locale}=router;
-const trans= locale==="en"?en:ar;
+  const router = useRouter();
+  const { locale } = router;
+  const trans = locale === "en" ? en : ar;
   return (
-   
-   
-    <div className=" box-content  min-h-screen overflow-hidden overflow-y-auto relative">
-    
-   
-  
-</div>
-  
-  
-
-
-  )
+    <div className=" box-content  min-h-screen overflow-hidden overflow-y-auto relative"></div>
+  );
 }
 
-export default projects
+export default projects;

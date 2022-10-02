@@ -3,49 +3,45 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Poppins-Bold";
-    font-weight: 400;
-    src: url("../public/fonts/Poppins-SemiBold.ttf")format("truetype");
-  
-    font-weight: 600;
-  
-    font-style: normal;
-  }
-  input{
-    accent-color:#ff4d6e;
-  }
-  @font-face {
-    font-family: "SfproText";
-    src: url("../public/fonts/alfont_com_SFProAR_semibold.ttf")format("truetype");
-    font-weight: 400;
-    font-weight: 600;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "elwatanP";
-    font-weight: 200;
-    src: url("../public/fonts/ElwatanP.ttf")format("truetype");
-   font-style: normal;
-  }
-  .dark .dark\:bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  font-family: "Poppins-Bold";
+  font-weight: 400;
+  src: url("../public/fonts/Poppins-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+input {
+  accent-color: #ff4d6e;
+}
+@font-face {
+  font-family: "SfproText";
+  src: url("../public/fonts/alfont_com_SFProAR_semibold.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "elwatanP";
+  font-weight: 200;
+  src: url("../public/fonts/ElwatanP.ttf") format("truetype");
+  font-style: normal;
+}
+.dark .dark\:bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-
-  html,
-body{
+html,
+body {
   padding: 0rem;
   margin: 0;
-font-family: "Poppins-Bold";
-   
-
+  font-family: "Poppins-Bold";
 }
-bodybackground{
-   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
-    --tw-bg-opacity: 1;
+bodybackground {
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
 }
-
 
 a {
   color: inherit;
@@ -60,7 +56,6 @@ a {
   display: none;
 }
 
-  
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -87,10 +82,8 @@ hr.hrcolor {
   border: 1px solid #1c1d1f;
 }
 
-.textStyleAr{
-  font-family:SfproText;
-font-size:20px;
-font-weight:normal;
+.textStyleAr {
+  font-family: SfproText;
+  font-size: 20px;
+  font-weight: normal;
 }
-
-
