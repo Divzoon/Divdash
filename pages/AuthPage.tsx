@@ -162,7 +162,7 @@ function AuthPage() {
                       className="w-full  m-2 duration-300 select-none bg-red-500 text-white font-bold py-4 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline"
                       type="submit"
                     >
-                      Send
+                      Send 
                     </button>
                   </div>
                 </form>
