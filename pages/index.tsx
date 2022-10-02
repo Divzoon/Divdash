@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import React from "react";
 import DashHeader from "../components/DashHeader";
->>>>>>> main
 
 function index() {
 
